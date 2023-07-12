@@ -1,1 +1,3 @@
 # playwrightDockerBug
+
+> npm install dotenv
