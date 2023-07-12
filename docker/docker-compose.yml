@@ -1,0 +1,24 @@
+version: '3.4'
+services:
+  app-frontend:
+    build:
+      context: ../../xxx-xxx/web
+      dockerfile: ../../xxx-xx/web/docker/frontend/Dockerfile
+      target: build
+      args:
+        - ENV_FILE=./docker/frontend/extra_files/.env.development
+    command: npm start
+    ports:
+      - "3000:3000"
+
+  playwright:
+    depends_on:
+      - app-frontend
+    ports:
+      - "9323:9323"
+    environment:
+      - CI
+      - baseUrl=https://google.co.uk
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
