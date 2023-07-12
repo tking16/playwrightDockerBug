@@ -1,0 +1,21 @@
+{
+  "name": "playwright-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tking16/playwrightDockerBug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tking16/playwrightDockerBug/issues"
+  },
+  "homepage": "https://github.com/tking16/playwrightDockerBug#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.36.0"
+  }
+}
