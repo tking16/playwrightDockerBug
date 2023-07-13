@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Fail test', async ({ page }) => {
+  let emptyEnvVar = process.env.MY_ENV_VARIABLE!.split(',');
   await page.goto('https://google.com/');
 
   // Expect a title "to contain" a substring.
